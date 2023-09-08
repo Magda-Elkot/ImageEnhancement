@@ -28,25 +28,47 @@ matplotlib: for visualization
 ## Histogram Processing
 ### This section includes two types of histogram processing techniques: histogram equalization and contrast stretching.
 
-#### Histogram Equalization
+## Histogram Equalization
 
-  Histogram equalization is applied to enhance the contrast of the image. 
-  The code snippet includes the following steps:
+    Histogram equalization is applied to enhance the contrast of the image. 
+    The code snippet includes the following steps:
 
-Splitting the image into its RGB channels
+      Splitting the image into its RGB channels
+      
+      Applying histogram equalization to each channel
+      
+      Merging the equalized channels to obtain the equalized image
+      
+      Saving the equalized image to the output directory
 
-Applying histogram equalization to each channel
+## Contrast Stretching
 
-Merging the equalized channels to obtain the equalized image
+    Contrast stretching is applied to further enhance the contrast of the image. The code snippet includes the following steps:
 
-Saving the equalized image to the output directory
+      Applying automatic contrast stretching to each channel
+      
+      Merging the stretched channels to obtain the stretched image
+      
+      Saving the stretched image to the output directory
 
-#### Contrast Stretching
+## Point-wise Intensity Transformations - Log Transform
+  ### In this section, a log transformation is applied to enhance the details in the image. The code snippet includes the following steps:
 
-  Contrast stretching is applied to further enhance the contrast of the image. The code snippet includes the following steps:
+      Converting the image to grayscale
+      
+      Applying a log transformation to the grayscale image
+      
+      Normalizing the log-transformed image
+      
+      Saving the log-transformed image to the output directory
 
-Applying automatic contrast stretching to each channel
+## Linear Noise Smoothing - Smoothing with PIL and ImageFilter.BLUR
+  ###In this section, linear noise smoothing is performed using a Gaussian blur filter. The code snippet includes the following steps:
 
-Merging the stretched channels to obtain the stretched image
-
-Saving the stretched image to the output directory
+      Loading the image as a NumPy array with a data type of np.float32
+      
+      Scaling the pixel values to the range [0, 1]
+      
+      Applying a Gaussian blur filter with a radius of 2
+      
+      Saving the linear-smoothed image to the output directory
