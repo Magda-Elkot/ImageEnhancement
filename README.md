@@ -1,4 +1,4 @@
-# ImageEnhancement
+# Image Enhancement
 Image enhancement is an important task in image processing, which aims to improve the visual quality 
 of images by reducing noise, improving contrast, and enhancing details. In this project, we will explore
 two approaches for image enhancement: traditional image processing techniques and a pretrained model 
